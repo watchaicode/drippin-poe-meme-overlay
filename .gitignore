@@ -1,0 +1,11 @@
+node_modules/
+out/
+dist/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Temp files from content extraction (regeneratable)
+guide.txt
+zones-source.json

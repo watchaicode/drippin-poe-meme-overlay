@@ -1,0 +1,261 @@
+{
+  "buildId": "poe2-mercenary-grenades",
+  "name": "PoE 2 — Mercenary Grenades (Speed Leveling)",
+  "game": "poe2",
+  "routeId": "poe2-campaign-v0.5",
+  "vendorRegex": "\"!(uiv)\" \"cross|mov|[egdl] da.* to a\"",
+  "buildReminders": [
+    {
+      "text": "Save Regals/Alcs/Runes/Exalts for Lv 16 Varnished Crossbow.",
+      "kind": "item",
+      "toLevel": 16
+    },
+    {
+      "text": "Next crossbow target: Lv 33 Bombard Crossbow.",
+      "kind": "item",
+      "fromLevel": 17,
+      "toLevel": 33
+    },
+    {
+      "text": "Final-campaign crossbow: Lv 59 Cannonade Crossbow.",
+      "kind": "item",
+      "fromLevel": 34,
+      "toLevel": 59
+    },
+    {
+      "text": "Tense Crossbow > Makeshift starter — upgrade ASAP.",
+      "kind": "item",
+      "toLevel": 10
+    },
+    {
+      "text": "Lv 10+ vendor check: Sturdy Crossbow base.",
+      "kind": "vendor",
+      "fromLevel": 10,
+      "toLevel": 15
+    },
+    {
+      "text": "Mod priorities: HIGH FLAT DAMAGE > %IPD. Suffix: +# to projectile skill levels.",
+      "kind": "item",
+      "highlight": true,
+      "fromLevel": 11
+    },
+    {
+      "text": "Lv 16 craft: magic base w/ flat → Essence (Abrasion/Flames/Ice/Electricity) or Regal → exalt to 3 prefixes → socket Storm Rune → whetstone.",
+      "kind": "item",
+      "fromLevel": 16,
+      "toLevel": 32
+    },
+    {
+      "text": "Damage rune priority: Storm > Desert > Glacial > Iron.",
+      "kind": "item",
+      "fromLevel": 16
+    },
+    {
+      "text": "Act 3+: use REGULAR essences (Lesser too weak for Lv 33+ weapons).",
+      "kind": "item",
+      "fromLevel": 30,
+      "toLevel": 51
+    },
+    {
+      "text": "Main: Explosive Grenade + Fragmentation Rounds.",
+      "kind": "gem",
+      "toLevel": 5
+    },
+    {
+      "text": "Drop Fragmentation Rounds — Explosive Grenade only.",
+      "kind": "gem",
+      "fromLevel": 6,
+      "toLevel": 13
+    },
+    {
+      "text": "Flash Grenade for trash clear + boss stuns.",
+      "kind": "gem",
+      "toLevel": 51
+    },
+    {
+      "text": "Reach Lv 14 before Geonor — Gas Grenade unlocks then.",
+      "kind": "boss",
+      "toLevel": 13
+    },
+    {
+      "text": "First Lv 5 Uncut Skill Gem → cut as Gas Grenade.",
+      "kind": "gem",
+      "toLevel": 5
+    },
+    {
+      "text": "Combo: Gas Grenade → Explosive Grenade (detonate).",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 51
+    },
+    {
+      "text": "Bosses: Gas → Explosive on cooldown. Gas cap = 6.",
+      "kind": "boss",
+      "fromLevel": 14
+    },
+    {
+      "text": "Pre-Bombard: cast Gas twice per Explosive.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 32
+    },
+    {
+      "text": "Once you have Oil Grenade, throw one before usual rotation.",
+      "kind": "gem",
+      "fromLevel": 14
+    },
+    {
+      "text": "Supports — Explosive Grenade: Multishot I + Elemental Armament I.",
+      "kind": "gem",
+      "toLevel": 13
+    },
+    {
+      "text": "Supports — Flash Grenade: Multishot I.",
+      "kind": "gem",
+      "toLevel": 13
+    },
+    {
+      "text": "At Lv 14: move Multishot I from Flash → Gas Grenade.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 14
+    },
+    {
+      "text": "Add Elemental Armament I to Gas Grenade.",
+      "kind": "gem",
+      "fromLevel": 14
+    },
+    {
+      "text": "Upgrade priority (Lv 14-51): Explosive > Gas > Flash.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 51
+    },
+    {
+      "text": "Tier 2: Multishot II → Explosive → Gas → Flash.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 51
+    },
+    {
+      "text": "Tier 2: Elemental Armament II → Explosive → Gas.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 51
+    },
+    {
+      "text": "Swap clear to Cluster Grenade — one-shots packs.",
+      "kind": "gem",
+      "fromLevel": 52
+    },
+    {
+      "text": "Frost Bomb stops applying exposure above its level cap (Lv 1 gem = mobs Lv 20-). Drop when no longer working.",
+      "kind": "gem",
+      "fromLevel": 6,
+      "toLevel": 30
+    },
+    {
+      "text": "Lv 3 gem order: Rust King → upgrade Explosive; Lachlann → Flash; Crowbell → Pounce.",
+      "kind": "gem",
+      "toLevel": 13
+    }
+  ],
+  "zoneReminders": {
+    "Clearfell": [
+      {
+        "text": "Cut Clearfell skill gem as Frost Bomb.",
+        "kind": "gem"
+      }
+    ],
+    "The Grelwood": [
+      {
+        "text": "Aregane's Hut: cut Multishot I → put on Explosive Grenade.",
+        "kind": "gem"
+      }
+    ],
+    "The Red Vale": [
+      {
+        "text": "Rust King's Lv 3 gem: upgrade Explosive Grenade.",
+        "kind": "gem"
+      },
+      {
+        "text": "Click every Rusted/Refined Arm — guaranteed class weapon base (one per Arm; full set covers every weapon type).",
+        "kind": "item",
+        "highlight": true
+      },
+      {
+        "text": "Transmute/Augment Tense Crossbow drops.",
+        "kind": "item"
+      }
+    ],
+    "Cemetery of the Eternals": [
+      {
+        "text": "Lachlann's Lv 3 gem: cut as Flash Grenade.",
+        "kind": "gem"
+      },
+      {
+        "text": "Side-zone trick: enter Mausoleum FIRST → Tomb becomes Lv 9 → kill Asinia → ctrl+click new Mausoleum (now Lv 9) → kill Draven for Lv 11 item drops.",
+        "kind": "item",
+        "highlight": true
+      }
+    ],
+    "Hunting Grounds": [
+      {
+        "text": "Optional Ritual Lv 4 gem: candidate for Pounce.",
+        "kind": "gem"
+      }
+    ],
+    "Ogham Village": [
+      {
+        "text": "Save Leitis quest reward (Lv 5 gem): cut as Gas Grenade.",
+        "kind": "gem"
+      },
+      {
+        "text": "Grab Blank Rune + Artificer's Orb next to Smithing Tools.",
+        "kind": "item",
+        "highlight": true
+      },
+      {
+        "text": "Trade Blank Rune → Renly → Lesser Storm Rune (for Lv 16 weapon craft).",
+        "kind": "vendor"
+      }
+    ],
+    "Vastiri Outskirts": [
+      {
+        "text": "Act 2 starts — currency now OK to use. Hunt Lv 16 Varnished Crossbow.",
+        "kind": "item"
+      }
+    ],
+    "Buried Shrines": [
+      {
+        "text": "Lesser Jeweller's Orb → Explosive Grenade. Add Magnified Area I (later swap to Deliberation).",
+        "kind": "gem"
+      }
+    ],
+    "Sandswept Marsh": [
+      {
+        "text": "Lesser Jeweller's Orb → Gas Grenade. Add Magnified Area I.",
+        "kind": "gem"
+      }
+    ],
+    "Deshar": [
+      {
+        "text": "Guaranteed Artificer's Orb along outer wall near entrance.",
+        "kind": "item",
+        "highlight": true
+      }
+    ],
+    "Isle of Kin": [
+      {
+        "text": "Guaranteed Greater Rune from The Blind Beast (Primal Arena).",
+        "kind": "item"
+      }
+    ],
+    "Singing Caverns": [
+      {
+        "text": "Hunt Pearlescent Amulet: +# to level of all projectile skills > Life/Res.",
+        "kind": "item"
+      }
+    ]
+  }
+}
