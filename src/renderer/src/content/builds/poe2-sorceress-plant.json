@@ -5,32 +5,53 @@
   "routeId": "poe2-campaign-v0.5",
   "buildReminders": [
     {
-      "text": "Pre-Lv 14: Entangle + Essence Drain/Contagion OR Orb of Storms/Spark. Entangle is weak alone before 14.",
+      "text": "Pre-Lv 14: clear with Spark + Orb of Storms (Entangle alone is too weak before 14).",
       "kind": "gem",
       "toLevel": 13
     },
     {
-      "text": "Lv 14: Socket Thunderstorm. Combo = Entangle + Thunderstorm (Thunderstorm \"waters\" Entangle).",
+      "text": "Act I active engrave priority: Spark > Orb of Storms > Volcano > Entangle.",
+      "kind": "gem",
+      "toLevel": 14
+    },
+    {
+      "text": "Lv 14: socket Thunderstorm. Combo = Entangle + Thunderstorm (Thunderstorm \"waters\" the plants).",
       "kind": "gem",
       "fromLevel": 14,
       "toLevel": 30
     },
     {
-      "text": "Lv 31: Socket Thrashing Vines for single-target. Link Heft + Considered Casting.",
+      "text": "Act II active engrave priority: add Thunderstorm.",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 30
+    },
+    {
+      "text": "Lv 31: socket Thrashing Vines for single-target. Link Heft + Considered Casting.",
       "kind": "gem",
       "fromLevel": 31
+    },
+    {
+      "text": "Act III active engrave priority: add Thrashing Vines (asset name: Awakened Forest).",
+      "kind": "gem",
+      "fromLevel": 30
+    },
+    {
+      "text": "Act I support engrave priority: Unleash > Faster Cast > Controlled Destruction.",
+      "kind": "gem",
+      "toLevel": 14
+    },
+    {
+      "text": "Act II support engrave priority: add Explosive Growth + Living Lightning.",
+      "kind": "gem",
+      "fromLevel": 14
     },
     {
       "text": "Core support for Entangle/Thunderstorm combo: Accelerated Growth.",
       "kind": "gem"
     },
     {
-      "text": "Orb of Storms supports: Overabundance I + Unleash.",
-      "kind": "gem",
-      "toLevel": 30
-    },
-    {
-      "text": "Mid: add Living Lightning to extract Impale stacks from spells.",
+      "text": "Living Lightning extracts Impale stacks from your spells (pairs with Cut to the Bone passive area).",
       "kind": "gem",
       "fromLevel": 25
     },
@@ -40,9 +61,19 @@
       "fromLevel": 60
     },
     {
-      "text": "Spirit: Arctic Armour (anti-surround) + Barkskin (early armor while you stack ES).",
+      "text": "Act I spirit engrave: Arctic Armour.",
       "kind": "gem",
-      "toLevel": 50
+      "toLevel": 14
+    },
+    {
+      "text": "Act II spirit engrave: add Barkskin (extra armor while you stack ES).",
+      "kind": "gem",
+      "fromLevel": 14
+    },
+    {
+      "text": "Act III spirit engrave: add Attrition.",
+      "kind": "gem",
+      "fromLevel": 30
     },
     {
       "text": "Cap Fire / Cold / Lightning resistance at 75%.",
@@ -63,7 +94,7 @@
       "kind": "passive"
     },
     {
-      "text": "Passive priority: Cut to the Bone area — Armour Break is a massive damage multiplier.",
+      "text": "Passive priority: Cut to the Bone area — Armour Break is a massive damage multiplier (pairs with Living Lightning for impale).",
       "kind": "passive",
       "highlight": true
     },
@@ -88,7 +119,7 @@
       "fromLevel": 70
     },
     {
-      "text": "Uniques to chase: Bushwhack (Pin defense), Idol of Uldurn (clear + ST). Headhunter endgame chase.",
+      "text": "Uniques to chase: Bushwhack (Pin defense), Idol of Uldurn (clear + ST), Headhunter endgame.",
       "kind": "item"
     }
   ],
