@@ -287,10 +287,39 @@ export default function App() {
 
   const allBuilds = useAllBuilds()
 
+  const availableBuilds = useMemo(
+    () => (client ? allBuilds.filter((b) => b.game === client.game) : []),
+    [allBuilds, client]
+  )
+
+  const [selectedBuildId, setSelectedBuildId] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!client) {
+      setSelectedBuildId(null)
+      return
+    }
+    const saved = localStorage.getItem(`poe-overlay:selectedBuild:${client.game}`)
+    setSelectedBuildId(saved)
+  }, [client])
+
   const activeBuild = useMemo(() => {
     if (!client) return null
-    return defaultBuild(allBuilds, client.game)
-  }, [client, allBuilds])
+    if (selectedBuildId) {
+      const found = availableBuilds.find((b) => b.buildId === selectedBuildId)
+      if (found) return found
+    }
+    return defaultBuild(availableBuilds, client.game)
+  }, [client, availableBuilds, selectedBuildId])
+
+  const selectBuild = useCallback(
+    (buildId: string) => {
+      if (!client) return
+      localStorage.setItem(`poe-overlay:selectedBuild:${client.game}`, buildId)
+      setSelectedBuildId(buildId)
+    },
+    [client]
+  )
 
   const stepInfo = useMemo(() => {
     if (!activeBuild) return null
@@ -409,6 +438,20 @@ export default function App() {
               <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-200 border border-amber-500/30">
                 {GAME_LABEL[client.game]}
               </span>
+            )}
+            {availableBuilds.length > 1 && activeBuild && (
+              <select
+                value={activeBuild.buildId}
+                onChange={(e) => selectBuild(e.target.value)}
+                className="no-drag text-[10px] px-1.5 py-0.5 rounded bg-purple-500/15 text-purple-200 border border-purple-500/30 max-w-[140px] cursor-pointer"
+                title="Switch build"
+              >
+                {availableBuilds.map((b) => (
+                  <option key={b.buildId} value={b.buildId}>
+                    {b.name}
+                  </option>
+                ))}
+              </select>
             )}
             {clickThrough && (
               <span

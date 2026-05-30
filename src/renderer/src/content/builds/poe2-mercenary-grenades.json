@@ -1,6 +1,6 @@
 {
   "buildId": "poe2-mercenary-grenades",
-  "name": "PoE 2 — Mercenary Grenades (Speed Leveling)",
+  "name": "Mercenary Grenades (Speed Leveling)",
   "game": "poe2",
   "routeId": "poe2-campaign-v0.5",
   "vendorRegex": "\"!(uiv)\" \"cross|mov|[egdl] da.* to a\"",

@@ -1,0 +1,96 @@
+{
+  "buildId": "poe2-sorceress-plant",
+  "name": "Sorceress Plant (Disciple of Varashta)",
+  "game": "poe2",
+  "routeId": "poe2-campaign-v0.5",
+  "buildReminders": [
+    {
+      "text": "Pre-Lv 14: Entangle + Essence Drain/Contagion OR Orb of Storms/Spark. Entangle is weak alone before 14.",
+      "kind": "gem",
+      "toLevel": 13
+    },
+    {
+      "text": "Lv 14: Socket Thunderstorm. Combo = Entangle + Thunderstorm (Thunderstorm \"waters\" Entangle).",
+      "kind": "gem",
+      "fromLevel": 14,
+      "toLevel": 30
+    },
+    {
+      "text": "Lv 31: Socket Thrashing Vines for single-target. Link Heft + Considered Casting.",
+      "kind": "gem",
+      "fromLevel": 31
+    },
+    {
+      "text": "Core support for Entangle/Thunderstorm combo: Accelerated Growth.",
+      "kind": "gem"
+    },
+    {
+      "text": "Orb of Storms supports: Overabundance I + Unleash.",
+      "kind": "gem",
+      "toLevel": 30
+    },
+    {
+      "text": "Mid: add Living Lightning to extract Impale stacks from spells.",
+      "kind": "gem",
+      "fromLevel": 25
+    },
+    {
+      "text": "Endgame: Shock Conduction I on Thunderstorm — generates Mana Remnants for sustain.",
+      "kind": "gem",
+      "fromLevel": 60
+    },
+    {
+      "text": "Spirit: Arctic Armour (anti-surround) + Barkskin (early armor while you stack ES).",
+      "kind": "gem",
+      "toLevel": 50
+    },
+    {
+      "text": "Cap Fire / Cold / Lightning resistance at 75%.",
+      "kind": "item",
+      "highlight": true
+    },
+    {
+      "text": "Vendor priorities: +Physical Spell / +Spell Skill gem levels on Staff, Wand, Amulet, Focus.",
+      "kind": "vendor"
+    },
+    {
+      "text": "Passive keystone: Wildsurge Incantation — required for Entangle / Thrashing Vines damage.",
+      "kind": "passive",
+      "highlight": true
+    },
+    {
+      "text": "Passive priority: Plant nodes — Boundless Growth, Constricting (% damage).",
+      "kind": "passive"
+    },
+    {
+      "text": "Passive priority: Cut to the Bone area — Armour Break is a massive damage multiplier.",
+      "kind": "passive",
+      "highlight": true
+    },
+    {
+      "text": "Clear: spam Entangle, drop Thunderstorm on top.",
+      "kind": "gem",
+      "fromLevel": 14
+    },
+    {
+      "text": "Single target: Sigil of Power → Kelari's Brutality → stack Entangle → keep Thrashing Vines up → water with Thunderstorm.",
+      "kind": "boss",
+      "fromLevel": 31
+    },
+    {
+      "text": "Map gear: Staff +Physical/Spell gem levels, Focus +1 (or +2) Spell Skill, Rings cast speed, Body Armor max ES.",
+      "kind": "item",
+      "fromLevel": 60
+    },
+    {
+      "text": "CI (Chaos Inoculation) respec: only after stacking ES on gear. Grab Abasement + Shimmering Mirage to avoid stun/ailment penalties.",
+      "kind": "passive",
+      "fromLevel": 70
+    },
+    {
+      "text": "Uniques to chase: Bushwhack (Pin defense), Idol of Uldurn (clear + ST). Headhunter endgame chase.",
+      "kind": "item"
+    }
+  ],
+  "zoneReminders": {}
+}

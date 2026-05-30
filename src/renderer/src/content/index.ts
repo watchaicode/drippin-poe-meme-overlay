@@ -1,5 +1,6 @@
 import poe2Campaign from './routes/poe2-campaign.json'
 import mercGrenades from './builds/poe2-mercenary-grenades.json'
+import sorcPlant from './builds/poe2-sorceress-plant.json'
 import type { Build, Game, Reminder, Route, ZoneStep } from './types'
 
 const ROUTES: Record<string, Route> = {
@@ -7,7 +8,10 @@ const ROUTES: Record<string, Route> = {
 }
 
 // Builds compiled into the app. Disk-loaded builds are merged on top in App.
-export const BUILTIN_BUILDS: Build[] = [mercGrenades as Build]
+export const BUILTIN_BUILDS: Build[] = [
+  mercGrenades as Build,
+  sorcPlant as Build
+]
 
 export function routeOf(build: Build): Route | null {
   return ROUTES[build.routeId] ?? null
